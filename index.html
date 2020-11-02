@@ -1,20 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Assignment 10 - Forms</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT FORM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <form method="post" action="http://sarah.ccc-vcim.com/process.php">
+    <h1>Digital Agency Contact Form</h1>
+<form id="project" method="post" action="">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company"><br>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"><br>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state"><br>
+        <label for="coun">Country</label>
+        <input type="text" id="coun" name="coun"><br>
+        
+        <h3>Project Type</h3>
+        <input type="radio" name="website" id="website">
+        <label for="website">New Website</label><br>
+        <input type="radio" name="design" id="design">
+        <label for="design">Redesing Existing Website</label><br>
+        <input type="radio" name="social" id="social">
+        <label for="social">Social Media Marketing</label><br>
+        <input type="radio" name="adv" id="adv">
+        <label for="adv">Digital Advertising</label><br>
 
-  <input type="submit" name="process">
+        <label for="web">Personal Website</label>
+        <input type="url" id="web" name="web"><br>
+        <label for="number">Phone Number</label>
+        <input type="number" id="number" name="number" min="1"><br>
+        <label for="email">Email Address</label> <br>
+        <input type="email" name="email" id="email"><br>
+        
+        <input type="submit" value="Send">
 </form>
 </body>
-
 </html>
